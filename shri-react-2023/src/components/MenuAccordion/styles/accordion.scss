@@ -1,0 +1,57 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px 0;
+  gap: 8px;
+
+  &__card {
+    border-radius: 8px;
+    justify-items: start;
+    padding: 24px;
+    background-color: #fff;
+
+    &_wrap_label{
+      margin-bottom: 16px;
+    }
+    
+    &_wrap_question {
+      display: grid;
+      grid-template-columns: auto 30px; 
+      cursor: pointer;
+    }
+  }
+
+  &__label {
+    margin: 0;
+    color: #1b1f23;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  &__question {
+    margin: 0;
+    color: #1b1f23;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  &__arrow {
+    justify-self: end;
+    transition: transform 0.3s ease-in-out;
+
+    &_active {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__answer {
+    cursor: auto;
+    display: block;
+    margin-top: 16px;
+    color: #1B1F23;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

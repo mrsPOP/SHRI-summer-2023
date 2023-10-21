@@ -1,0 +1,20 @@
+.footer {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: auto;
+  height: 86px;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  width: 100%;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: #333;
+
+  &__link {
+    color: #FFF;
+    font-size: 20px;
+  }
+}

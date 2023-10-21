@@ -1,0 +1,72 @@
+.popup {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  
+  &__card {
+    display: grid;
+    align-items: start;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 51px auto auto;
+    grid-template-rows: auto 16px auto 24px auto;
+    grid-template-areas:
+      'head head close'
+      '. . .'
+      'text text text'
+      '. . .'
+      'yes no no';
+  
+    &-head {
+      margin: 0 auto 0 0;
+      grid-area: head;
+    }
+  
+    &-text {
+      color: #1b1f23;
+      font-size: 16px;
+      line-height: 20px;
+      grid-area: text;
+    }
+  
+    &-button-close {
+      width: min-content;
+      height: min-content;
+      margin-left: auto;
+      margin-bottom: auto;
+      cursor: pointer;
+      background-color: transparent;
+      width: min-content;
+      padding: 0;
+      border: none;
+      grid-area: close;
+    }
+  
+    &-button-yes {
+      cursor: pointer;
+      background-color: transparent;
+      width: min-content;
+      padding: 0;
+      border: none;
+      grid-area: yes;
+    }
+  
+    &-button-no {
+      margin-left: 8px;
+      cursor: pointer;
+      background-color: transparent;
+      width: min-content;
+      padding: 0;
+      border: none;
+      grid-area: no;
+    }
+  }
+}

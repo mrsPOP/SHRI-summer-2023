@@ -1,0 +1,9 @@
+.filmlist {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  background-color: transparent;
+  max-width: 1855px;
+  width: 100%;
+}

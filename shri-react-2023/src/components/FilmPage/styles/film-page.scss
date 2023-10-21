@@ -1,0 +1,124 @@
+.film-page {
+  margin: 0;
+  display: flex;
+  max-width: 1856px;
+  max-height: 553px;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+  background-color: #FFF;
+
+  &__image {
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+
+  &__title-and-counter-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  &__genre {
+    color: var(--text-primary, #1B1F23);
+    font-size: 16px;
+    font-style: italic;
+    line-height: 20px;
+  }
+
+  &__count-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-self: end;
+  }
+
+  &__button {
+    min-width: 12px;
+    min-height: 12px;
+    border: none;
+    background-size: contain;
+    background-color: #F50;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &_decrement {
+      background-image: url('./images/minus_norm.svg');
+
+      &:hover {
+        background-image: url('./images/minus-hover.svg');
+      }
+    }
+
+    &_increment {
+      background-image: url('./images/plus_norm.svg');
+
+      &:hover {
+        background-image: url('./images/plus-hover.svg');
+      }
+    }
+  }
+
+  &__ticket-number {
+    color: var(--text-primary, #1B1F23);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  &__about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    
+    &-item {
+      font-size: 20px;
+      line-height: 24px;
+
+      &_bold {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 100%;
+  }
+
+  &__description-title {
+    color: var(--text-primary, #1B1F23);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  &__description-text {
+    font-size: 16px;
+    line-height: 24px;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,98 @@
+.film-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.film {
+  display: grid;
+  grid-template-columns: 100px minmax(min-content, 1fr) 70px min-content;
+  align-items: start;
+  max-width: 1855px;
+  width: 100%;
+  padding: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  background-color: #FFF;
+  gap: 24px;
+
+  &__picture {
+    flex-shrink: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background-size: contain;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+  }
+
+  &__title {
+    color: var(--text-primary, #1B1F23);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  &__genre {
+    color: var(--text-primary, #1B1F23);
+    font-size: 16px;
+    font-style: italic;
+    line-height: 20px;
+  }
+
+  &__count-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-self: end;
+  }
+
+  &__button {
+    min-width: 12px;
+    min-height: 12px;
+    border: none;
+    background-size: contain;
+    background-color: #F50;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &_decrement {
+      background-image: url('./images/minus_norm.svg');
+
+      &:hover {
+        background-image: url('./images/minus-hover.svg');
+      }
+    }
+
+    &_increment {
+      background-image: url('./images/plus_norm.svg');
+
+      &:hover {
+        background-image: url('./images/plus-hover.svg');
+      }
+    }
+  }
+
+  &__ticket-number {
+    color: var(--text-primary, #1B1F23);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  &__delete-button {
+    border: none;
+    background-size: contain;
+    background-image: url('./images/close.svg');
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}

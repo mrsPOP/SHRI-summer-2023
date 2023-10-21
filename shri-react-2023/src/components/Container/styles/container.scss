@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 62px;
+  max-width: 1855px;
+  background-color: #FFF;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 32px 24px;
+  
+  &__text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}

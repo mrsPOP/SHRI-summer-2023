@@ -1,0 +1,21 @@
+.filters {
+  position: sticky;
+  top: 108px;
+  height: calc(100vh - 86px - 81px);
+  left: 32px;
+  width: 360px;
+  background-color: #FFF;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  
+  &__head {
+    margin: 0 0 4px;
+    color: #1b1f23;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,59 @@
+.header {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  width: 100%;
+  padding: 24px 32px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background: #333;
+
+  &__logo {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__cart-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__cart-button {
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('./images/cart.svg');
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 6px;
+      background-color: rgb(75, 62, 62);
+    }
+  }
+  
+  &__ticket-number {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    
+    &-background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background: #F50;
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+}
